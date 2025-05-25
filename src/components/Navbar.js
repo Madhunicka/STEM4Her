@@ -32,6 +32,9 @@ export default function Navbar({ isLoggedIn, onLogout }) {
               <Link to="/challenges" className="hover:text-cyan-300 transition-colors duration-200">
                 Challenges
               </Link>
+               <Link to="/profile" className="hover:text-cyan-300 transition-colors duration-200">
+                Profile
+              </Link>
             </>
           )}
 
@@ -97,6 +100,9 @@ export default function Navbar({ isLoggedIn, onLogout }) {
               </Link>
               <Link to="/challenges" onClick={closeMenu} className="hover:text-cyan-300">
                 Challenges
+              </Link>
+              <Link to="/profile" onClick={closeMenu} className="hover:text-cyan-300">
+                Profile
               </Link>
             </>
           )}
