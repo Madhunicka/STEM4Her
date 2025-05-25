@@ -15,7 +15,7 @@ The gender gap in STEM, particularly in tech is still a major issue. This applic
 - **Responsive Design** – Mobile first layout with smooth transitions
 - **Authentication Aware Navigation** – Dynamic navbar based on user login state
 - **Animated Hero Section** – Pulse and slide in effects for engaging visuals
-- **Challenges & Events Pages** – Connect learning to real world coding activities
+- **Challenges,Learn & Events Pages** – Connect learning to real world coding activities
 
 
 ## Deployed App on Vercel
@@ -27,6 +27,6 @@ The gender gap in STEM, particularly in tech is still a major issue. This applic
 🔗 (https://www.figma.com/proto/z7fNKdOCMZLBx7RBVCGZG9/Prototype_STEM?page-id=0%3A1&node-id=1-1032&p=f&viewport=139%2C316%2C0.13&t=cgz3qe2yOnDLhwRZ-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A844)
 
 
-##  Screen Recording Demo (Max 4 Minutes)
-
+##  Screen Recording Demo 
+🔗 (https://drive.google.com/file/d/1xibHqqhsEBORuN_RCTO-UI3hAQf6WCD7/view?usp=sharing)
 
