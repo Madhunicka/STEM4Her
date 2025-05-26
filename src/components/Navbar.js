@@ -124,7 +124,7 @@ export default function Navbar({ isLoggedIn, onLogout }) {
               onClick={closeMenu} 
               className="text-2xl font-bold flex items-center"
             >
-              <span className="bg-white text-purple-600 rounded-full w-8 h-8 flex items-center justify-center mr-2">👩</span>
+              <span className="bg-white text-purple-600 bg-transparent w-8 h-8 flex items-center justify-center mr-2">👩</span>
               STEM4Her
             </Link>
             <button 
