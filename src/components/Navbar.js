@@ -18,7 +18,7 @@ export default function Navbar({ isLoggedIn, onLogout }) {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
     
         <Link to="/" className="text-2xl font-bold tracking-tight flex items-center">
-          <span className="bg-white text-purple-600 bg-transparent w-8 h-8 flex items-center justify-center mr-2">👩</span>
+          <span className="text-purple-600 bg-transparent w-8 h-8 flex items-center justify-center mr-2">👩</span>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-200">
             STEM4Her
           </span>
@@ -124,7 +124,7 @@ export default function Navbar({ isLoggedIn, onLogout }) {
               onClick={closeMenu} 
               className="text-2xl font-bold flex items-center"
             >
-              <span className="bg-white text-purple-600 bg-transparent w-8 h-8 flex items-center justify-center mr-2">👩</span>
+              <span className="text-purple-600 bg-transparent w-8 h-8 flex items-center justify-center mr-2">👩</span>
               STEM4Her
             </Link>
             <button 
