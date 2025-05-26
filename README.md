@@ -20,11 +20,11 @@ The gender gap in STEM, particularly in tech is still a major issue. This applic
 
 ## Deployed App on Vercel
 
-🔗 (https://stem-4-her-xtta.vercel.app/)
+🔗 (https://stem-4-her-2ewn.vercel.app/)
 
 ## Figma Design/Prototype
 
-🔗 (https://www.figma.com/proto/z7fNKdOCMZLBx7RBVCGZG9/Prototype_STEM?page-id=0%3A1&node-id=1-1032&p=f&viewport=139%2C316%2C0.13&t=cgz3qe2yOnDLhwRZ-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A844)
+🔗 (https://www.figma.com/proto/z7fNKdOCMZLBx7RBVCGZG9/Prototype_STEM?page-id=0%3A1&node-id=1-905&p=f&viewport=279%2C349%2C0.07&t=gr8831iVNplhMfu6-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A844)
 
 
 ##  Screen Recording Demo 
