@@ -37,115 +37,136 @@ export default function Login({ onLogin }) {
     <>
       {/* Toast Notification */}
       {showToast && (
-        <div className="fixed top-5 right-5 z-50 w-80 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded shadow-lg animate-slide-in">
-          <div className="font-bold mb-1">Success</div>
+        <div className="fixed top-5 right-5 z-50 w-80 bg-gradient-to-r from-green-400 to-teal-300 text-white px-4 py-3 rounded-xl shadow-lg animate-slide-in">
+          <div className="font-bold mb-1 flex items-center">
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Success
+          </div>
           <div className="text-sm">{toastMessage}</div>
-          <div className="w-full bg-green-200 rounded h-2 mt-3 overflow-hidden">
-            <div className="bg-green-500 h-full animate-progress-bar" />
+          <div className="w-full bg-white/30 rounded-full h-1.5 mt-3 overflow-hidden">
+            <div className="bg-white h-full animate-progress-bar" />
           </div>
         </div>
       )}
 
-      <section className="pt-24 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-white px-4 sm:px-8">
-        <div className="max-w-md w-full bg-white rounded shadow-lg p-6">
-          <h2 className="text-3xl font-bold mb-6 text-blue-800 text-center">Login</h2>
-
-          {/* Social login buttons */}
-          <div className="flex flex-col space-y-3 mb-6">
-            <button
-              type="button"
-              className="flex items-center justify-center space-x-3 border border-gray-300 rounded py-2 hover:bg-blue-100 transition"
-              onClick={() => alert('Google login not implemented')}
-            >
-              {/* Google Icon */}
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
-                <path
-                  fill="#EA4335"
-                  d="M12 10.2v3.6h5.4c-.2 1.1-1.3 3.2-5.4 3.2-3.3 0-6-2.7-6-6s2.7-6 6-6c1.9 0 3.2.8 3.9 1.5l2.6-2.5C16 4 14.2 3.2 12 3.2 7.6 3.2 4 6.8 4 11.2s3.6 8 8 8c4.6 0 7.6-3.2 7.6-7.8 0-.6 0-1-.1-1.4H12z"
-                />
-              </svg>
-              <span className="text-blue-700 font-semibold">Continue with Google</span>
-            </button>
-
-            <button
-              type="button"
-              className="flex items-center justify-center space-x-3 border border-gray-300 rounded py-2 hover:bg-blue-100 transition"
-              onClick={() => alert('Facebook login not implemented')}
-            >
-              {/* Facebook Icon */}
-              <svg className="w-5 h-5" fill="#1877F2" viewBox="0 0 24 24">
-                <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.326 24H12v-9.294H9.294v-3.618H12V8.413c0-2.672 1.63-4.128 4.01-4.128 1.14 0 2.12.085 2.41.123v2.8h-1.657c-1.3 0-1.554.62-1.554 1.53v2.004h3.11l-.406 3.618H15.21V24h7.465C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0z" />
-              </svg>
-              <span className="text-blue-700 font-semibold">Continue with Facebook</span>
-            </button>
-
-            <button
-              type="button"
-              className="flex items-center justify-center space-x-3 border border-gray-300 rounded py-2 hover:bg-blue-100 transition"
-              onClick={() => alert('Email login selected')}
-            >
-              {/* Email Icon */}
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M16 12H8m8-4H8m10 8H6m12-12H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z"
-                />
-              </svg>
-              <span className="text-blue-700 font-semibold">Continue with Email</span>
-            </button>
+      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-pink-50 px-4 sm:px-8 py-24">
+        <div className="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden">
+          {/* Decorative Header */}
+          <div className="bg-gradient-to-r from-purple-600 to-pink-500 p-6 text-center">
+            <div className="flex justify-center mb-4">
+              {/* <div className="bg-white text-purple-600 rounded-full w-12 h-12 flex items-center justify-center text-2xl">
+                👩‍💻
+              </div> */}
+            </div>
+            {/* <h2 className="text-3xl font-bold text-white">Welcome Back!</h2> */}
+            <p className="text-white/90 mt-2">👩‍💻 Sign in to continue your STEM journey</p>
           </div>
 
-          {/* OR separator */}
-          <div className="flex items-center mb-6">
-            <hr className="flex-grow border-gray-300" />
-            <span className="mx-3 text-blue-600 font-semibold">OR</span>
-            <hr className="flex-grow border-gray-300" />
-          </div>
-
-          {/* Login Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              type="text"
-              placeholder="Username"
-              className="w-full border border-blue-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              className="w-full border border-blue-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-            {error && <p className="text-red-600 text-center">{error}</p>}
-            <button
-              type="submit"
-              className="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-600 transition-transform transform hover:scale-105"
-            >
-              Sign In
-            </button>
-          </form>
-
-          <div className="mt-6 text-center">
-            <p className="text-sm text-gray-600">
-              Don&apos;t have an account?{' '}
-              <span
-                onClick={() => navigate('/register')}
-                className="text-blue-700 font-semibold cursor-pointer hover:underline"
+          <div className="p-8">
+            <div className="flex flex-col space-y-4 mb-6">
+              <button
+                type="button"
+                className="flex items-center justify-center space-x-3 border border-gray-200 rounded-full py-3 px-4 hover:bg-purple-50 transition-all"
+                onClick={() => alert('Google login not implemented')}
               >
-                Create one
-              </span>
-            </p>
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" 
+                  alt="Google" 
+                  className="w-5 h-5"
+                />
+                <span className="text-gray-700 font-medium">Continue with Google</span>
+              </button>
+
+              <button
+                type="button"
+                className="flex items-center justify-center space-x-3 border border-gray-200 rounded-full py-3 px-4 hover:bg-purple-50 transition-all"
+                onClick={() => alert('Facebook login not implemented')}
+              >
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/733/733547.png" 
+                  alt="Facebook" 
+                  className="w-5 h-5"
+                />
+                <span className="text-gray-700 font-medium">Continue with Facebook</span>
+              </button>
+            </div>
+
+            <div className="flex items-center mb-6">
+              <hr className="flex-grow border-gray-200" />
+              <span className="mx-3 text-gray-400 font-medium">or</span>
+              <hr className="flex-grow border-gray-200" />
+            </div>
+
+            
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-1">
+                  Username
+                </label>
+                <input
+                  id="username"
+                  type="text"
+                  placeholder="Enter your username"
+                  className="w-full border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+                  Password
+                </label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter your password"
+                  className="w-full border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
+
+              {error && (
+                <div className="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded-lg">
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="font-medium">{error}</span>
+                  </div>
+                </div>
+              )}
+
+              <div className="flex justify-end">
+                <a href="#" className="text-sm text-purple-600 hover:text-purple-800">
+                  Forgot password?
+                </a>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white py-4 rounded-xl font-bold hover:from-purple-700 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg"
+              >
+                Sign In
+              </button>
+            </form>
+
+            <div className="mt-6 text-center">
+              <p className="text-gray-600">
+                Don't have an account?{' '}
+                <button
+                  onClick={() => navigate('/register')}
+                  className="text-purple-600 font-semibold hover:text-purple-800 hover:underline"
+                >
+                  Sign up
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </section>
